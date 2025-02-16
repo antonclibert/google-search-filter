@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Filetype Search</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="antonranasinghe" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="header">
+      <img src="icon.png" alt="Extension Icon" class="extension-icon">
+      <h1 class="extension-title">
+        <span class="google-colors">Simply Search</span>
+      </h1>
+    </div>
+    <div class="search-container">
+      <select id="filetype">
+        <option selected disabled>Select File Type</option>
+        <option value="jpg">Image (JPG)</option>
+        <option value="png">Image (PNG)</option>
+        <option value="gif">Image (GIF)</option>
+        <option value="mp4">Video (MP4)</option>
+        <option value="avi">Video (AVI)</option>
+        <option value="pdf">PDF</option>
+        <option value="doc">Word Doc (DOC)</option>
+        <option value="docx">Word Doc (DOCX)</option>
+        <option value="ppt">PowerPoint (PPT)</option>
+        <option value="pptx">PowerPoint (PPTX)</option>
+        <option value="xls">Excel (XLS)</option>
+        <option value="xlsx">Excel (XLSX)</option>
+        <option value="txt">Text (TXT)</option>
+        <option value="html">HTML</option>
+        <option value="xml">XML</option>
+        <option value="csv">CSV</option>
+        <option value="zip">ZIP</option>
+      </select>
+      <input type="text" id="searchTerm" placeholder="Enter search term">
+      <button class="single-button" id="searchBtn">Search</button>
+    </div>
+  </div>
+  <h1>
+    Other Tools
+  </h1>
+   <div class="button-container">
+    <button id="prefixButton" class="tooltip" data-tooltip="See any paywall? Click this and it will be gone">Paywall remover</button>
+    <button id="button2" class="tooltip" data-tooltip="Tooltip for button 2">Button 2</button>
+    <button id="button3" class="tooltip" data-tooltip="Tooltip for button 3">Button 3</button>
+   </div>
+
+<!-- ... (remaining code) ... -->
+ 
+  <footer>
+    <div class="container">
+      <p>Developed by <a href="#">Anton Ranasinghe</a></p>
+      <p>&copy; <span id="currentYear"></span> All rights reserved | <a href="#" target="_blank">Anton Ranasinghe</a></p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

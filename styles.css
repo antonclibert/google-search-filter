@@ -1,0 +1,231 @@
+body{
+  
+  
+}
+.container {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  width: 500px;
+}
+
+
+
+.extension-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.extension-title {
+  font-size: 24px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 .google-colors {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  background: linear-gradient(to right, #EA4335, #FBBC05, #4285F4, #34A853);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 8px;
+}
+
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#filetype,
+#searchTerm {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+#searchBtn {
+  flex: 0 0 100%;
+  padding: 8px;
+  font-size: 16px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* paywall remover*/
+
+
+footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666666;
+  font-family: 'Roboto Mono', monospace;
+}
+
+footer a {
+  color: #4285F4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* ... (previous CSS code) ... */
+/* Improved button styling */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-container button {
+  flex: 1;
+  padding: 8px 12px; /* Adjust padding for a smaller button */
+  font-size: 12px; /* Adjust font size for a smaller button */
+  border: none;
+  border-radius: 4px; /* Adjust border radius for a less rounded corner */
+  cursor: pointer;
+  text-align: center;
+  background-color: #4285F4;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Button hover effect */
+.button-container button:hover {
+  background-color: #34A853;
+  transform: scale(1.05);
+}
+
+/* Button active effect */
+.button-container button:active {
+  background-color: #1d67d6;
+  transform: scale(0.95);
+}
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 480px) {
+  .button-container button {
+    width: 100%;
+  }
+}
+
+/* Improved button styling for single-button class */
+.single-button {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 12px; /* Adjust padding for a smaller button */
+  font-size: 14px; /* Adjust font size for a smaller button */
+  border: none;
+  border-radius: 4px; /* Adjust border radius for a less rounded corner */
+  cursor: pointer;
+  text-align: center;
+  background-color: #4285F4;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Button hover effect for single-button class */
+.single-button:hover {
+  background-color: #34A853;
+  transform: scale(1.05);
+}
+
+/* Button active effect for single-button class */
+.single-button:active {
+  background-color: #1d67d6;
+  transform: scale(0.95);
+}
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 480px) {
+  .single-button {
+    width: 100%;
+  }
+}
+
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 10px;
+  background-color: #333;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  white-space: normal; /* Allow text to wrap to multiple lines */
+  max-width: 200px; /* Set a maximum width for the tooltip */
+  line-height: 1.2; /* Adjust line height for readability */
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 500px) {
+  .tooltip::after {
+    bottom: auto;
+    top: 100%;
+    transform: translateX(-50%);
+    font-size: 8px;
+    padding: 4px 8px;
+    max-width: 80%;
+  }
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff9900;
+}
